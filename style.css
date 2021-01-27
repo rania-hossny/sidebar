@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: #fff;
+}
+.wrapper .header {
+  z-index: 1;
+  /* background-color: #e2b646; */
+  background-image: linear-gradient(to right, #ebbc46, #ca9e2d);
+
+  position: fixed;
+  width: calc(100% - 0%);
+  height: 80px;
+  display: flex;
+  top: 0;
+}
+.wrapper .header .header-menu {
+  width: calc(100% - 0%);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-menu img {
+  width: 51px;
+  height: 45px;
+  border-radius: 50%;
+  margin: -7px -5px;
+}
+
+.wrapper .header .header-menu .title p {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600px;
+}
+/* .wrapper .header .header-menu .title span {
+  color: black;
+} */
+.wrapper .header .header-menu .silder-btn {
+  color: #fff;
+  position: absolute;
+  margin-left: 208px;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+.wrapper .header .header-menu .silder-btn:hover {
+  color: black;
+}
+.wrapper .header .header-menu ul {
+  display: flex;
+}
+.wrapper .header .header-menu ul li a {
+  /* background: #fff; */
+  color: #fff;
+  display: block;
+  margin: 0 10px;
+  font-size: 30px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+.wrapper .header .header-menu ul li a:hover {
+  background: #fff;
+  color: black;
+}
+.wrapper .silder {
+  z-index: 1;
+  background: #ebbc46;
+  position: fixed;
+  top: 80px;
+  width: 250px;
+  height: 100%;
+  transition-property: width;
+  overflow-y: auto;
+}
+.wrapper .silder .silder-menu {
+  overflow: hidden;
+}
+.wrapper .silder .silder-menu .profile img {
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.wrapper .silder .silder-menu .profile p {
+  color: #999;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.wrapper .silder .silder-menu .item {
+  width: 250px;
+  overflow: hidden;
+}
+.wrapper .silder .silder-menu .item .menu-btn {
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+.wrapper .silder .silder-menu .item .menu-btn:hover {
+  color: black;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.wrapper .silder .silder-menu .item .menu-btn i {
+  margin-right: 20px;
+}
+.menu-btn span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.wrapper .silder .silder-menu .item .menu-btn .drop-menu {
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.wrapper .silder .silder-menu .item .sub-menu {
+  background: #3498db;
+  overflow: hidden;
+
+  max-height: 0 !important;
+  transition: 0.3s;
+  transition-property: background, max-height;
+}
+.wrapper .silder .silder-menu .item .sub-menu a {
+  display: block;
+  position: relative;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #8fc5e9;
+  transition: 0.3s;
+  transition-property: background;
+}
+.wrapper .silder .silder-menu .item .sub-menu a:hover {
+  background-color: #44b1f0;
+}
+.wrapper .silder .silder-menu .item .sub-menu i {
+  padding-right: 20px;
+  font-size: 10px;
+}
+.wrapper .silder .silder-menu .item:target .sub-menu {
+  max-height: 500px !important;
+}
+.main-container {
+  width: (100%-250px);
+  margin-left: 250px;
+  margin-top: 70px;
+  padding: 15px;
+  background: url(v2osk-1Z2niiBPg5A-unsplash.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.3s;
+}
+.wrapper .collapsed .silder {
+  width: 70px;
+}
+.wrapper .collapsed .silder .profile img,
+.wrapper .collapsed .silder .profile p,
+.wrapper .collapsed .silder a span {
+  display: none;
+}
+
+.wrapper .collapsed .silder-menu .silder .item .menu-btn {
+  font-size: 25px;
+}
+.wrapper .collapsed .silder-menu .silder .item .sub-menu i {
+  font-size: 18px;
+  padding-left: 3px;
+}
+.wrapper .collapsed .main-container {
+  width: calc(100%-70%);
+  margin-left: 70px;
+}
+
+.bell {
+  position: relative;
+}
+.notification {
+  position: absolute;
+  width: 19px;
+  height: 20px;
+  top: -8px;
+  right: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notification p {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 600;
+  color: white;
+}

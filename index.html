@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" >
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-menu">
+                <div class="title"><p>Team Work </p> </div>
+           <div class="silder-btn">
+            <i class="fa fa-bars"></i>
+           </div>
+           <ul>
+               <!-- <li> <a href="#"><i class="fa fa-search"></i></a></li> -->
+               <li class="bell">
+                    <a href="#"><i class="fa fa-bell"></i></a>
+                    <div class="notification"><p>3</p></div>
+                </li>
+               <li> <a href="#"><img src="pietra-schwarzler-FqdfVIdgR98-unsplash.jpg">
+               </a></li>
+           </ul>
+            </div>
+        </div>
+        <div class="silder">
+            <div class="silder-menu">
+                <center class="profile">
+                    <img src="pietra-schwarzler-FqdfVIdgR98-unsplash.jpg" width="200px" height="200px">
+                    <p>Name</p>
+
+                </center>
+
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fa fa-user-circle"></i><span>profile </span>
+                    </a>
+                   
+                </li>
+
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fa fa-users" aria-hidden="true"></i><span>Teams</span>
+
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fa fa-calendar" aria-hidden="true"></i><span>Calendar</span>
+
+                    </a>
+                </li>
+               
+                
+                <li class="item" id="massage">
+                    <a href="#massage" class="menu-btn">
+                        <i class="fa fa-envelope"></i><span>message </span>
+                    </a>
+                   
+                </li>
+                <li class="item" id="setting">
+                    <a href="#setting" class="menu-btn">
+                        <i class="fa fa-cog"></i><span>settings </span>
+                    </a>
+                   
+                </li>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+
+    </div>
+    <script >
+        $(document).ready(function(){
+        $(".silder-btn").click(function(){
+            $(".wrapper").toggleClass("collapsed");
+        });
+    });
+        </script>
+   
+</body>
+</html>
